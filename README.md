@@ -6,6 +6,8 @@ Adds a thin caching layer based on the computed hash of the input tree. If the i
 the `updateCache` method will be called, otherwise (input is the same) the results of the last `updateCache`
 call will be used instead.
 
+broccoli-caching-writer excels in situations where you need to take multiple inputs for a single output (or a single input for many outputs) and you do not want to recalculate the entire output tree every time the watcher detects the need to rebuild.
+
 ## ZOMG!!! TESTS?!?!!?
 
 I know, right?
